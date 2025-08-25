@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Grid Layout - Starter</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      /* TODO: Define grid-template-columns and grid-template-rows */
+      /* TODO: Add grid-template-areas if using areas */
+      gap: 10px;
+      padding: 10px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    header {
+      /* TODO: Place header at the top (span all 3 columns) */
+        background: #3498db; /* placeholder */
+        color: white;
+    }
+
+    aside {
+      /* TODO: Place sidebar in the first column */
+     background: #2ecc71; /* placeholder */
+     color: white;
+    }
+
+    main {
+      /* TODO: Place main content in the center column */
+        background: #ecf0f1; /* placeholder */
+        color: white;
+        display: grid;
+      /* TODO: Make nested grid for cards (repeat(3, 1fr)) */
+      gap: 10px;
+    }
+
+    .card {
+      background: #95a5a6;
+      text-align: center;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+      padding: 20px;
+    }
+
+    .right-panel {
+      /* TODO: Place this in the last column */
+      background: #e67e22; /* placeholder */
+      color: white;
+    }
+
+    footer {
+      /* TODO: Place footer at the bottom (span all 3 columns) */
+      background: #9b59b6; /* placeholder */
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Dashboard Header</header>
+    <aside>Menu / Sidebar</aside>
+    <main>
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <div class="card">Card 4</div>
+      <div class="card">Card 5</div>
+      <div class="card">Card 6</div>
+    </main>
+    <div class="right-panel">Right Panel</div>
+    <footer>Footer Section</footer>
+  </div>
+</body>
+</html>

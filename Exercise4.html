@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+  <style>
+    .grid {
+      height: 100vh;
+      display: grid;
+      /* TODO: define grid-template-areas */
+      gap: 10px;
+    }
+    header { background: #3498db; grid-area: header; }
+    aside { background: #2ecc71; grid-area: sidebar; }
+    main { background: #ecf0f1; grid-area: main; }
+    .ads { background: #e67e22; grid-area: ads; }
+    footer { background: #9b59b6; grid-area: footer; }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <header>Header</header>
+    <aside>Sidebar</aside>
+    <main>Main Content</main>
+    <div class="ads">Ads</div>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
